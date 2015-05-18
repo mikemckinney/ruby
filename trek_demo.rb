@@ -4,7 +4,7 @@
 #Initiate program to list, create, modify, and search a hash
 class Officer
   @@crew = {
-  	Worf: "Operations",
+  	    Worf: "Operations",
         LaForge: "Engineering",
         Picard: "Command"
 }
@@ -73,7 +73,9 @@ case choice
       section = gets.chomp
     Officer.crew_list.each do |name, job|
     if section == job 
-      puts "#{name} \n"
+       puts "#{name} \n" 
+    else
+       puts "Enter valid selection"
     end  
   end
   when 5

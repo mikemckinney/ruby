@@ -1,3 +1,5 @@
+#Script to get number of times a word is repeated in a string
+#
 #user input, .chomp cuts of extra whitespace
 puts "Enter text: "
   text = gets.chomp
