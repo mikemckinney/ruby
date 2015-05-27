@@ -1,7 +1,9 @@
 require "rest_client"
 require "json"
 
-response = RestClient.get 'http://www.reddit.com/user/awildsketchappeared/comments/.json'
+uname = 'awildsketchappeared' 
+
+response = RestClient.get 'http://www.reddit.com/user/'+ uname +'/comments/.json'
 
 
 data = JSON.parse(response.body)
